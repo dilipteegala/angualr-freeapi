@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<div >
+  <table class="table">
+  <tr>
+    <th>Id</th>
+    <th> Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor="let comment of _comments" >
+    <th>{{comment.id}}</th>
+    <th>{{comment.name}}</th>
+    <th>{{comment.email}}</th>
+    <th>{{comment.body}}</th>
+    </tr>
+  </table>
+</div>
